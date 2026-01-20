@@ -1,0 +1,16 @@
+-- Seed books data for Mist Giver
+INSERT INTO books (title, author, category, description, book_url, cover_url, enabled)
+VALUES 
+  ('The Great Gatsby', 'F. Scott Fitzgerald', 'Classic', 'A story of decadence and excess, Gatsby explores the American Dream in the Jazz Age.', 'https://www.gutenberg.org/files/64317/64317-h/64317-h.htm', 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400', true),
+  ('To Kill a Mockingbird', 'Harper Lee', 'Classic', 'A gripping tale of racial injustice and the loss of innocence in the American South.', 'https://example.com/mockingbird.pdf', 'https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=400', true),
+  ('1984', 'George Orwell', 'Science Fiction', 'A dystopian social science fiction novel and cautionary tale about totalitarianism.', 'https://example.com/1984.pdf', 'https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=400', true),
+  ('Pride and Prejudice', 'Jane Austen', 'Romance', 'A romantic novel following the emotional development of Elizabeth Bennet.', 'https://www.gutenberg.org/files/1342/1342-h/1342-h.htm', 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400', true),
+  ('The Catcher in the Rye', 'J.D. Salinger', 'Classic', 'A story about teenage angst and alienation, narrated by Holden Caulfield.', 'https://example.com/catcher.pdf', 'https://images.unsplash.com/photo-1589998059171-988d887df646?w=400', true),
+  ('Brave New World', 'Aldous Huxley', 'Science Fiction', 'A dystopian novel set in a futuristic World State of genetically modified citizens.', 'https://example.com/brave.pdf', 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=400', true),
+  ('The Hobbit', 'J.R.R. Tolkien', 'Fantasy', 'A fantasy novel about the adventures of hobbit Bilbo Baggins.', 'https://example.com/hobbit.pdf', 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=400', true),
+  ('Fahrenheit 451', 'Ray Bradbury', 'Science Fiction', 'A dystopian novel about a future American society where books are outlawed.', 'https://example.com/fahrenheit.pdf', 'https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=400', true),
+  ('Jane Eyre', 'Charlotte Bronte', 'Classic', 'A novel following the emotions and experiences of its eponymous heroine.', 'https://www.gutenberg.org/files/1260/1260-h/1260-h.htm', 'https://images.unsplash.com/photo-1524578271613-d550eacbd628?w=400', true),
+  ('Wuthering Heights', 'Emily Bronte', 'Romance', 'A wild, passionate story of the intense love between Catherine and Heathcliff.', 'https://www.gutenberg.org/files/768/768-h/768-h.htm', 'https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=400', true),
+  ('The Picture of Dorian Gray', 'Oscar Wilde', 'Classic', 'A philosophical novel about a young man whose portrait ages instead of him.', 'https://www.gutenberg.org/files/174/174-h/174-h.htm', 'https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=400', true),
+  ('Moby Dick', 'Herman Melville', 'Adventure', 'The saga of Captain Ahab and his obsessive quest to kill the white whale.', 'https://www.gutenberg.org/files/2701/2701-h/2701-h.htm', 'https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?w=400', true)
+ON CONFLICT DO NOTHING;
