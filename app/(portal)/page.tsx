@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { BookOpen, Download, Search, Shield } from "lucide-react"
 import { createClient } from "@/lib/supabase/server"
+import { useSearchParams } from "next/navigation"
 import { Suspense } from "react"
 
 async function getFeaturedBooks() {
@@ -15,11 +16,15 @@ async function getFeaturedBooks() {
   return data || []
 }
 
+function Loading() {
+  return null
+}
+
 export default async function HomePage() {
   const books = await getFeaturedBooks()
 
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<Loading />}>
       <div>
         {/* Hero Section */}
         <section className="relative py-20 md:py-32 bg-gradient-to-b from-primary/5 to-background">
